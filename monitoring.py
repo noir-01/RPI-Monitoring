@@ -4,6 +4,10 @@ import gspread
 from datetime import datetime
 import psutil
 from gpiozero import CPUTemperature
+
+#path 담긴 파일
+from myPath import myPath
+
 now = datetime.now()
 weekday = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
 #경고 끄기
@@ -15,12 +19,13 @@ scope = [
     "https://www.googleapis.com/auth/drive",
 ]
 # JSON Key File Path
-json_key_path = "Your Json File Path"
+json_key_path = myPath["jsonPath"]
 
 credential = ServiceAccountCredentials.from_json_keyfile_name(json_key_path, scope)
 gc = gspread.authorize(credential)
 
-spreadsheet_url = "Your Google Sheet Url"
+#Google Sheet URL
+spreadsheet_url = myPath["sheetUrl"]
 doc = gc.open_by_url(spreadsheet_url)
 
 #요일별로 다른 시트 사용
