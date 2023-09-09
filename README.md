@@ -1,6 +1,6 @@
 # RPI-Monitoring
 23/09/09
-매 분마다 라즈베리파이 CPU/RAM 사용량 및 온도를 구글 스프레드시트에 업로드
+매 분마다 라즈베리파이 CPU/RAM 사용량 및 온도를 구글 스프레드시트에 업로드 (crontab 이용)
 
 pip install gspread (version 5.11.1)
 
