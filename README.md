@@ -7,5 +7,6 @@ pip install gspread (version 5.11.1)
 
 worksheet은 Mon,Tue,Wed,Thu,Fri,Sat,Sun 7개의 시트로 구성
 
+
 GCP(Google Cloud Platform) 사용방법 참고
 https://greeksharifa.github.io/references/2023/04/10/gspread-usage/
