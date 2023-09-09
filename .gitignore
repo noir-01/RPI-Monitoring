@@ -1,3 +1,4 @@
 monitoring.log
 sheet_api.json
-mypath.py
+myPath.py
+__pycache__/
